@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alankar sonawane|Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  
+
+    .wrapper{
+   margin-top:80;
+   width:100%;
+   height:50px;
+   background-color: black;
+   color:white
+   margin-bottom:50px;
+   border-bottom:2px solid black;
+   
+ }   
+ .wrapper i{
+   font-size:35px;
+   float: left;
+   margin-top:10px;
+   color:white;
+ }
+  
+  .wrapper h2{
+    font-size:20px;
+    position:absolute;
+    top:15px;
+    left:80px;
+    color:white;
+  }
+  
+  #sidebar{
+    width:80%;
+    height:620px;
+    background-color: black;
+    color:white;
+    display:none;
+    justify-content:center;
+    position:absolute;
+    z-index:1;
+    top:50px;
+  }
+  
+  #sidebar li{
+    margin-top:15px;
+    margin-bottom:25px;
+    list-style-type: none;
+    display:block;
+    font-size:20px;
+    
+  }
+  #sidebar ul{
+    position:absolute;
+    top:10px;
+    left:50px;
+  }
+  
+  #sidebar a{
+    color:white;
+    text-decoration-line: none;
+  }
+  
+  .section1{
+    width:100%;
+    height:850px;
+   position:relative;
+   font-family:fantasy;
+   color:darkblue;
+   
+ 
+   
+   
+  }  
+  
+  .section1 img{
+    border-radius:50%;
+    margin-top:50px;
+    border:3px solid purple;
+    
+  }
+    article{
+      margin:10px;
+      height:300px;
+      padding:10px;
+      border:1px solid grey;
+      font-weight:bolder;
+      border-top:15px solid blue;
+      border-radius:10%;
+      border-bottom:15px solid blue;
+    }
+    
+
+  .introduction{
+    width:100%;
+    height:300px;
+    position:relative;
+   
+  }  
+  
+  .introduction h3{
+    font-family:fantasy;
+  color:darkblue;  
+  position:absolute;
+  top:20px;
+  left:0px;
+    }
+    
+  .Qualification{
+    width:100%;
+    height:400px;
+    font-family:fantasy;
+    color:darkblue;
+  }  
+  .Qualification table{
+    width:100%;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="wrapper" id="header">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+    <h2>ALANKAR SONAWANE</h2>
+  </div>
+  <div id="sidebar">
+    <ul>
+      <li><i class="fa fa-times" onclick="closeBar()" id="icon" ></i></li>
+      <a href="#header" >
+      <li>HOME</li></a>
+      <a href="#Services">
+      <li onclick="closeBar()">SERVICES</li></a>
+      <a href="#about">
+      <li onclick="closeBar()">ABOUT US</li></a>
+      <a href="#followUs">
+      <li onclick="closeBar()">FOLLOW US</li>
+      </a>
+      <a href="#dreamJob">
+      <li onclick="closeBar()">APPLY NOW</li></a>
+    </ul>
+    </div>
+    </nav>
+  </header>
+
+<main>
+  <section class="section1">
+    <center>
+      <img src="image/alankar.jpg" width="250px" height="250px"><br><br>
+      <h2>WEB DEVLOPER </h2><br>
+      <h3>BPO EXECUTIVE</h3><br>
+      <a href ="#" download = "Alankar sonawane">
+      <button type="button" class="btn btn-primary btn-lg">DOWNLOAD MY CV</button>
+      </a><br><br>
+      <article>
+      <h5>Hi Guys !</h5> My self Alankar Sonawane. I am passionate Web Developer ,looking forward to learn new things amd help you to make your online identity through web technology.<br>
+      I am working in BPO insutry from past 2 years . I love to talk to clients nad Customers to help them get best soultion for their problems. <br>
+      </article>
+      <hr>
+    </center>
+  </section>
+  <section class="introduction">
+   <h3>INTRODUCTION</h3><br>
+   <center>
+   <video autoplay loop muted width="360px" height="300px">
+     <source src="image/earth.mp4" type="video/mp4">
+   </video>
+   <br>
+  </center>
+  </section>
+  <section class="Qualification">
+    <h3>QUALIFICATION</h3><br>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>EDUCATION</th>
+          <th>SCHOOL/COLLEGE</th>
+          <th>PERCENTAGE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SSC</td>
+          <td>KMPD SCHOOL</td>
+          <td>71%</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>VIVA COLLEGE</td>
+          <td>48%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  
+</footer>
+
+<script>
+  const sidebar = document.getElementById('sidebar');
+    
+    const icon = document.getElementById('icon');
+    
+   
+   function showBar(){
+     sidebar.style.display="block";
+   }
+   
+   function closeBar(){
+     sidebar.style.display="none";
+   }
+   
+</script>
+</body>
+
+</html>
