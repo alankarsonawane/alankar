@@ -98,7 +98,7 @@ body{
    
   }  @keyframes slider{
     0%{background-image: url('image/bg1.jpg')}
-    25%{background-image: url('image/Kem.jpg')}
+    25%{background-image: url('image/bg2.jpg')}
     50%{background-image: url('image/bg3.jpg')}
     100%{background-image: url('image/bg4.jpg')}
   }
@@ -123,7 +123,7 @@ body{
       border-top:15px solid blue;
       border-radius:10%;
       border-bottom:15px solid blue;
-
+    
     }
     
 
@@ -141,18 +141,26 @@ body{
   position:absolute;
   top:20px;
   left:0px;
+  
     }
     
-  .Qualification{
+  .coding{
     width:100%;
-    height:400px;
+    height:650px;
     font-family:fantasy;
     color:#16F529;
-    background-color: black;
+    background-color:black
     border-bottom:2px solid greenyellow;
+    border-top:2px solid #16F529;
   }  
-  .Qualification table{
-    width:100%;
+  
+  .enbtn{
+   width:200px;
+   height:50px;
+   background:black;
+   color:#16F529;
+   border:2px solid #16F529;
+   border-radius:20%;
   }
   
   .livewebsites{
@@ -239,7 +247,7 @@ border-bottom:2px solid greenyellow;
 .wrapperimp{
        display: inline-flex;
        margin-top:20px;
-   margin-bottom:20px;
+   margin-bottom:80px;
       
      }
      
@@ -295,6 +303,99 @@ border-bottom:2px solid greenyellow;
        }
      }
 
+
+@media all and (min-width:768px){
+  
+  
+  .box1{
+    
+    background: black;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  
+  #work{
+    background:black;
+    width:100%;
+  }
+  
+}
+
+
+
+.work{
+  
+  width:100%;
+  color:white;
+  background-color: purple;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  font-family:fantasy;
+  color:#16F529;
+}
+
+.exp1{
+  margin:auto;
+  width:310px;
+  border:2px solid #16F529 ;
+  margin-bottom:15px;
+  border-radius:10px;
+  
+}
+
+.exp1 i{
+  font-size:100px;
+  margin-bottom: 20px;
+}
+
+.work button{
+  padding:10px;
+  height:35px;
+  border-radius: 15px;
+  background-color: black;
+  color:white;
+  
+}
+
+.exp2{
+  margin:auto;
+  width:310px;
+  border:2px solid #16F529;
+  margin-bottom:15px;
+  border-radius:10px;
+  
+}
+
+
+
+.exp2 i{
+font-size:100px;
+  margin-bottom: 20px;
+
+  
+}
+
+
+.exp3{
+  margin:auto;
+  width:310px;
+  border:2px solid #16F529;
+  margin-bottom:15px;
+  border-radius:10px;
+  padding-bottom:20px;
+  
+}
+
+
+.exp3 i{
+font-size:100px;
+  margin-bottom: 20px;
+
+  
+}
+
+
   </style>
 </head>
 
@@ -336,7 +437,8 @@ border-bottom:2px solid greenyellow;
         <center>
           <ul class="dynamic-texts">
             <li><span>WEB DEVLOPER</span></li><br>
-            <li><span>BPO EXECUTIVE</span></li><br>
+              <li><span>IT CONSULTANT</span></li><br>
+       
             <li><span>FREELANCER</span></li><br>
             <li><span>WEB DESIGNER</span></li>
           </ul>
@@ -361,52 +463,96 @@ border-bottom:2px solid greenyellow;
    <br>
   </center>
   </section>
-  <section class="Qualification">
-    <h3>QUALIFICATION</h3><br>
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th>EDUCATION</th>
-          <th>SCHOOL/COLLEGE</th>
-          <th>PERCENTAGE</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>SSC</td>
-          <td>KMPD SCHOOL</td>
-          <td>71%</td>
-        </tr>
-        <tr>
-          <td>HSC</td>
-          <td>VIVA COLLEGE</td>
-          <td>48%</td>
-        </tr>
-      </tbody>
-    </table>
+  <section class="coding"><br><center>
+  <h2>Learn Coding</h2>
+  </center><br>
+  Learn Web Devlopment in this course with just your smartphone.
+<center>  
+  
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/bgpic1.jpg" alt="Los Angeles" width="340px" height="400"><br>
+      
+
+    </div>
+    <div class="carousel-item">
+      <img src="image/bgpic4.jpg" alt="Chicago" width="340px" height="400px"><br>
+      
+    </div>
+    <div class="carousel-item">
+      <img src="image/bgpic3.jpg" alt="New York" width="340" height="400px">
+      <br>
+      
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    </center>
+  </div><br>
+  <center>
+  <button class="enbtn">ENROLL NOW</button>
+    </center>
   </section>
   
-  <section class="livewebsites">
-    
+  
+  <div class="work" id="work">
+    <br>
     <h4>LIVE WEBSITES</h4><br>
     <p>Note:Below website are solely designed and devloped by Developer Alankar sonawane</p>
-    <center>    <fig>
+    
+    
+    <div class="box1">
+    <div class="exp1" id="exp" data-aos="fade-left">
+      <center>
+       <fig>
    <img src="image/ygc.jpg" width="300px" height="280px" data-aos="fade-left">
 <figcaption><h4>YASH GLOBAL CONSULTANTS</h4></figcaption>
 </fig>
-<fig>
-  <img src="image/la.jpg" width="300px" height="280px" data-aos="fade-right">
-  <figcaption><h4>LAXMI AUTOMATION </h4></figcaption>
+
+      </center>
+    
+    </div>
+    <div class="exp2" id="csr" data-aos="fade-up">
+    <center>
+        <fig>
+   <img src="image/personal.jpg" width="300px" height="280px" data-aos="fade-left">
+<figcaption><h4>PERSONAL PORTFOLIO WEBSITE</h4></figcaption>
 </fig>
-<fig>
-  <img src="image/as.jpg" width="300px" height="280px" data-aos="fade-left">
-  <figcaption><h4>ALANKAR SONAWANE</h4></figcaption>
+
+      </center>
+      
+    </div>
+    <div class="exp3" id="exp3" data-aos="fade-right">
+      <center>
+         <fig>
+   <img src="image/ygc.jpg" width="300px" height="280px" data-aos="fade-left">
+<figcaption><h4>DSA TRAINING</h4></figcaption>
 </fig>
-<fig>
-  <img src="image/la.jpg" width="300px" height="280px" data-aos="fade-right">
-  <figcaption><h4>DSA TRAINING PORTAL</h4></figcaption>
-</fig>
-</center><br>
+      </center>
+    
+    </div>
+    </div>
+  </div>
+  
+<br>
 <center>
 <h3>50+ Websites Clients</h3></center>
   </section>
@@ -477,6 +623,10 @@ border-bottom:2px solid greenyellow;
    }
    
 </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
